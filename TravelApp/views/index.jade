@@ -2,9 +2,9 @@ extends layout
 
 block content
   h1= title
-  p Welcome to #{title}
+  p Tick the checkboxes of the Continents you have visited
 
-  ul
+  ul(class='checkboxes')
     each item in data
       li: label(for="checkbox")
         input(type="checkbox", name=item.continent, value=item.continent).form-control

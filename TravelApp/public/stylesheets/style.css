@@ -2,7 +2,15 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
-
 a {
   color: #00B7FF;
+}
+ul.checkboxes li {
+  list-style: none;
+}
+ul.checkboxes li ul {
+  display: none;
+}
+ul.checkboxes li input:checked + ul {
+  display: block;
 }

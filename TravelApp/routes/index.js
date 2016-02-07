@@ -19,7 +19,7 @@ router.get('/', function(req, res, next) {
     .value();
 
     res.render('index', {
-      title: 'Express',
+      title: 'Create your Map',
       data: groupedCountries
     });
   });
