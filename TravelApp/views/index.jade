@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  ul
+    each item in data
+      li: label(for="checkbox")
+        input(type="checkbox", name=item.continent, value=item.continent).form-control
+        = item.continent
+        ul
+          each country in item.countries
+            li: label(for="checkbox")
+              input(type="checkbox", name=country, value=country).form-control
+              = country
